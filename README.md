@@ -1,10 +1,27 @@
 # Blitz T-DCA — public backtest artifacts
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22809596.svg)](https://doi.org/10.5281/zenodo.22809596)
+
 This repository holds the **result file** behind the backtest published at
 <https://www.blitz-trading.com/backtest>, so that the SHA-256 printed on that
 page can be checked by anyone.
 
 It is a results archive, not a trading system. The engine source is not here.
+
+## Archived copy (DOI)
+
+Every tagged release of this repository is archived by [Zenodo](https://zenodo.org)
+(CERN), which issues a DOI. The archived copy is independent of this
+repository and of blitz-trading.com — neither can alter it after the fact.
+
+| | DOI |
+| --- | --- |
+| All versions (cite this) | <https://doi.org/10.5281/zenodo.22809596> |
+| This snapshot (`snapshot-20260824`) | <https://doi.org/10.5281/zenodo.22809597> |
+
+The JSON inside the Zenodo archive for `snapshot-20260824` hashes to the same
+SHA-256 as the file in this repository and the value printed on the website
+(verified 2026-09-17).
 
 ## What is in this release
 
