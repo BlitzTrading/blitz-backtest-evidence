@@ -1,0 +1,5 @@
+# Result artifacts must stay byte-identical to their published SHA-256.
+# Never let git touch line endings on data files.
+*.json -text
+*.xlsx binary
+*.csv -text
