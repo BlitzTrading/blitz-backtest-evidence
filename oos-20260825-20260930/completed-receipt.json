@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "strict_oos_strategy_evaluation_complete",
+  "completed_at_utc": "2026-10-05T12:02:24.336010+00:00",
+  "protocol_id": "public-presets-oos-20260825-20260930",
+  "freeze_manifest_sha256": "eb22322279c59c7d34457419c9b1cc520210bd7773ab8ea49183573ddd90dc3f",
+  "immutable_started_receipt_path": "C:\\Development\\blitz-backtest\\Data\\_strict_oos_receipts\\public-presets-oos-20260825-20260930.json",
+  "immutable_started_receipt_sha256": "7026412ed6b1acd0f2afccf00ae24bcfc2d11a8e5df73bce7cdbf294099a7885",
+  "strategy_evaluation": {
+    "started": true,
+    "completed": true
+  },
+  "output_path": "C:\\Development\\blitz-backtest\\Final\\OOS_2026-08-25_2026-09-30\\oos_results.json",
+  "output_sha256": "767d62c507d63fb59062774016e8b68761a967c112ec75df46d52bfbcf4de2b9"
+}

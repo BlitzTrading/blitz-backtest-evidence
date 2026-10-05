@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "strict_oos_strategy_evaluation_started",
+  "started_at_utc": "2026-10-05T11:58:29.207612+00:00",
+  "protocol_id": "public-presets-oos-20260825-20260930",
+  "freeze_manifest_path": "C:\\Development\\blitz-backtest\\Final\\OOS_2026-08-25_2026-09-30\\freeze_manifest.json",
+  "freeze_manifest_sha256": "eb22322279c59c7d34457419c9b1cc520210bd7773ab8ea49183573ddd90dc3f",
+  "freeze_git_commit": "79bc6ea7b7dccfba1893454824e4e8a4dd8ba448",
+  "hard_oos_start": "2026-08-25",
+  "hard_oos_end": "2026-09-30",
+  "strategy_evaluation": {
+    "started": true,
+    "completed": false
+  },
+  "pid": 27776
+}

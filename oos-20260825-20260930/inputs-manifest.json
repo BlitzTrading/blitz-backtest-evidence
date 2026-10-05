@@ -1,0 +1,1617 @@
+{
+  "schemaVersion": 1,
+  "protocolId": "public-presets-oos-20260825-20260930",
+  "verifiedAtUtc": "2026-10-05T14:30:00Z",
+  "source": "Binance Data Vision (USD-M futures, public) and the Binance USD-M Futures REST API",
+  "howToVerify": [
+    "Download each zip_url and its checksum_url.",
+    "sha256 of the zip must equal zip_sha256_official (the value in Binance's .CHECKSUM file).",
+    "Extract the single CSV from the zip without modification; its sha256 must equal csv_sha256.",
+    "csv_matches_local_input_csv: the extracted CSV is byte-identical to the local CSV prepared for the run. The BTC engine read these CSVs directly; their hashes, and those of all 1m klines and markPriceKlines CSVs, are also recorded in the frozen execution plan (csv_matches_frozen_hash).",
+    "ETH aggTrades: the ETH engine read compressed tick files converted from these CSVs before the freeze. The frozen execution plan records the hashes of the converted files, not of the CSVs. The conversion code is not published."
+  ],
+  "checksPassed": true,
+  "symbols": {
+    "BTCUSDT": {
+      "aggTrades_daily": [
+        {
+          "date": "2026-08-25",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-25.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-25.zip.CHECKSUM",
+          "zip_sha256_official": "608297cce521035ef06e6580d31b0f64bdca0fe068c5eeefabd931b3713f84d8",
+          "zip_sha256_downloaded": "608297cce521035ef06e6580d31b0f64bdca0fe068c5eeefabd931b3713f84d8",
+          "zip_bytes": 28098410,
+          "csv_name": "BTCUSDT-aggTrades-2026-08-25.csv",
+          "csv_sha256": "b826b5023c277146107d96f2f0149f8ff937bfefce4f64dd9438730f36de39c2",
+          "csv_bytes": 154595817,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-08-26",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-26.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-26.zip.CHECKSUM",
+          "zip_sha256_official": "8dbeee5b71d876fbc3dc9380b53e32581671ff984b9869ffaf55e9493cce6a9d",
+          "zip_sha256_downloaded": "8dbeee5b71d876fbc3dc9380b53e32581671ff984b9869ffaf55e9493cce6a9d",
+          "zip_bytes": 17360226,
+          "csv_name": "BTCUSDT-aggTrades-2026-08-26.csv",
+          "csv_sha256": "4e96dbd43ab4661b86b5111447cd078de925409c2f4786a00ab3847a2b21b307",
+          "csv_bytes": 95620717,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-27.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-27.zip.CHECKSUM",
+          "zip_sha256_official": "f775c8523545aa8a33b90b3f1a71d07b45cd33f8a5212b2e6cce797575c7a229",
+          "zip_sha256_downloaded": "f775c8523545aa8a33b90b3f1a71d07b45cd33f8a5212b2e6cce797575c7a229",
+          "zip_bytes": 17505955,
+          "csv_name": "BTCUSDT-aggTrades-2026-08-27.csv",
+          "csv_sha256": "067835a5f9369856f13f01de462a31d40adfadd73783dd3cc68a5c5e793402ed",
+          "csv_bytes": 95453450,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-08-28",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-28.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-28.zip.CHECKSUM",
+          "zip_sha256_official": "918af94802638af0a0d5fd826c18d827c2e09da69e8521badd9af38df90d6e27",
+          "zip_sha256_downloaded": "918af94802638af0a0d5fd826c18d827c2e09da69e8521badd9af38df90d6e27",
+          "zip_bytes": 21386527,
+          "csv_name": "BTCUSDT-aggTrades-2026-08-28.csv",
+          "csv_sha256": "2f0ba73140cd0a603b9396d9e5d75511d6d829205130e9fb6619b2f4db307e34",
+          "csv_bytes": 116875601,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-08-29",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-29.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-29.zip.CHECKSUM",
+          "zip_sha256_official": "0b0d0c729e027aeaa28762f2e0eea7fd99d17722337e249e10b7cce87314de19",
+          "zip_sha256_downloaded": "0b0d0c729e027aeaa28762f2e0eea7fd99d17722337e249e10b7cce87314de19",
+          "zip_bytes": 5578109,
+          "csv_name": "BTCUSDT-aggTrades-2026-08-29.csv",
+          "csv_sha256": "dc7592f5fa491e052d827fcfde8e706212919e1522192ee1ddab41904ec54023",
+          "csv_bytes": 29555779,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-08-30",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-30.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-30.zip.CHECKSUM",
+          "zip_sha256_official": "c342e2f94b9a17b8a48205dd35e297d346bf067c2c1c0a9d90b2b38dfcd9b99e",
+          "zip_sha256_downloaded": "c342e2f94b9a17b8a48205dd35e297d346bf067c2c1c0a9d90b2b38dfcd9b99e",
+          "zip_bytes": 10526225,
+          "csv_name": "BTCUSDT-aggTrades-2026-08-30.csv",
+          "csv_sha256": "4e251fc04e0248b1146a1656489bd12e2551f0d2d68708e2375e4136683f2df5",
+          "csv_bytes": 57108214,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-08-31",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-31.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-08-31.zip.CHECKSUM",
+          "zip_sha256_official": "454a1448bc2d8fa54e8372a3454d8aff1505ccec981c7c9e371333697ac0cc46",
+          "zip_sha256_downloaded": "454a1448bc2d8fa54e8372a3454d8aff1505ccec981c7c9e371333697ac0cc46",
+          "zip_bytes": 16396527,
+          "csv_name": "BTCUSDT-aggTrades-2026-08-31.csv",
+          "csv_sha256": "5c4c06240f9a811abcbc73ef3628876822ad15e84813703025e1d0ae983b958c",
+          "csv_bytes": 89948409,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-01",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-01.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-01.zip.CHECKSUM",
+          "zip_sha256_official": "8ee2432189e091f8df2181a7bf894f6458cf4c24ffcb0de904e7bbb80f0245ba",
+          "zip_sha256_downloaded": "8ee2432189e091f8df2181a7bf894f6458cf4c24ffcb0de904e7bbb80f0245ba",
+          "zip_bytes": 16134016,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-01.csv",
+          "csv_sha256": "cb7b643ce2ea962a925f4f52a79b6390bf4025c50fbdbb36ccba84c2164f96c7",
+          "csv_bytes": 88013591,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-02",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-02.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-02.zip.CHECKSUM",
+          "zip_sha256_official": "e0c1ebeac376aca642c091f389bc9316c2cfc006606f4d9528c66ea17e4cd6d1",
+          "zip_sha256_downloaded": "e0c1ebeac376aca642c091f389bc9316c2cfc006606f4d9528c66ea17e4cd6d1",
+          "zip_bytes": 15026149,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-02.csv",
+          "csv_sha256": "c3eb9b99304ae3bd10fc26ffdc9026eaf720f18fb65311e9c55938b77741c199",
+          "csv_bytes": 82177781,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-03",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-03.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-03.zip.CHECKSUM",
+          "zip_sha256_official": "37f4135ac25f6cce4d82d38f577ccc9803619b7516d574a61afaa9db856254ca",
+          "zip_sha256_downloaded": "37f4135ac25f6cce4d82d38f577ccc9803619b7516d574a61afaa9db856254ca",
+          "zip_bytes": 21991621,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-03.csv",
+          "csv_sha256": "699aaf139c037478ec40d9c253bc958d0b6ae70c02dfd64aa7a05bac96965a03",
+          "csv_bytes": 120057913,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-04",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-04.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-04.zip.CHECKSUM",
+          "zip_sha256_official": "9ec137c60c6bfce0473dac8a183e96ffae1db90b8c3fe829cf8ca2f8b2e5ee42",
+          "zip_sha256_downloaded": "9ec137c60c6bfce0473dac8a183e96ffae1db90b8c3fe829cf8ca2f8b2e5ee42",
+          "zip_bytes": 17905938,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-04.csv",
+          "csv_sha256": "128915034ad87bf265e0f47fa1afd021552e90dd8730c2b6ab42a81848bd15e3",
+          "csv_bytes": 97716701,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-05",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-05.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-05.zip.CHECKSUM",
+          "zip_sha256_official": "6e7c50c4f291c8658af962176c55901e820b082875cc786dddfd3cff451bb9f1",
+          "zip_sha256_downloaded": "6e7c50c4f291c8658af962176c55901e820b082875cc786dddfd3cff451bb9f1",
+          "zip_bytes": 5133394,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-05.csv",
+          "csv_sha256": "addb73cd0c116d317738118b557d15b0cef4ca4dbd6d85196548949243db79f9",
+          "csv_bytes": 27276285,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-06",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-06.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-06.zip.CHECKSUM",
+          "zip_sha256_official": "2d4d3b81e027c3d342659d8f678d650cc42382194114dfc22398010b366a639b",
+          "zip_sha256_downloaded": "2d4d3b81e027c3d342659d8f678d650cc42382194114dfc22398010b366a639b",
+          "zip_bytes": 6576354,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-06.csv",
+          "csv_sha256": "18ae6f0b8f8b81fa4678c46150c52fd33b2f134fbabb2f958ffa745aa0d99c5d",
+          "csv_bytes": 35041004,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-07",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-07.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-07.zip.CHECKSUM",
+          "zip_sha256_official": "8876dcbabd811c0d69b4d4868fa1a1acf0662a8ce6923eed845165d1fff3f629",
+          "zip_sha256_downloaded": "8876dcbabd811c0d69b4d4868fa1a1acf0662a8ce6923eed845165d1fff3f629",
+          "zip_bytes": 9162550,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-07.csv",
+          "csv_sha256": "47cab7c3a37304ac66dfb75b048f485a211d977d1583228818ac1e68a2827f34",
+          "csv_bytes": 49130167,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-08",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-08.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-08.zip.CHECKSUM",
+          "zip_sha256_official": "b0cca50f65f5d7ad33e5ef02d0896395208e71330c030b90258aa9abefcbcdf5",
+          "zip_sha256_downloaded": "b0cca50f65f5d7ad33e5ef02d0896395208e71330c030b90258aa9abefcbcdf5",
+          "zip_bytes": 12614367,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-08.csv",
+          "csv_sha256": "83a98fac9a120e1981cf0ef47972c4d8c45aaf0165a3a51bd8ac5922c10dcee7",
+          "csv_bytes": 68329872,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-09",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-09.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-09.zip.CHECKSUM",
+          "zip_sha256_official": "2f2cf57a5d30c3baa422444b2351ad8dfb9ca3ee01418a432ecc15df387a508a",
+          "zip_sha256_downloaded": "2f2cf57a5d30c3baa422444b2351ad8dfb9ca3ee01418a432ecc15df387a508a",
+          "zip_bytes": 15001551,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-09.csv",
+          "csv_sha256": "1d5b3c1b718d8a631e56657d7fbf3812bb385117be8996111f7b7e99ebda3a3d",
+          "csv_bytes": 82106516,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-10.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-10.zip.CHECKSUM",
+          "zip_sha256_official": "8bb550b35069bc97f752566255530911aeda58f1fbb4158a2da9b4a7acd017eb",
+          "zip_sha256_downloaded": "8bb550b35069bc97f752566255530911aeda58f1fbb4158a2da9b4a7acd017eb",
+          "zip_bytes": 14263854,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-10.csv",
+          "csv_sha256": "44cb72c69f4dd73b14ed64d539507fbd24dd6a79a11965a95cfe034b032cca44",
+          "csv_bytes": 78064883,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-11",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-11.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-11.zip.CHECKSUM",
+          "zip_sha256_official": "1859c03b05c563067a0ebe68594163a0ceec354ed80e061e781cac4a9dc7392f",
+          "zip_sha256_downloaded": "1859c03b05c563067a0ebe68594163a0ceec354ed80e061e781cac4a9dc7392f",
+          "zip_bytes": 20699493,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-11.csv",
+          "csv_sha256": "bcc994f02e0e1543f05d5bcea44ea2e20839bff929d31cd98857c0ba1b7d064f",
+          "csv_bytes": 114460384,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-12",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-12.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-12.zip.CHECKSUM",
+          "zip_sha256_official": "c259f9306f0a5d30f965971234b7ba766db35f45f4a6f06dee9d8171c9253cd7",
+          "zip_sha256_downloaded": "c259f9306f0a5d30f965971234b7ba766db35f45f4a6f06dee9d8171c9253cd7",
+          "zip_bytes": 3736187,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-12.csv",
+          "csv_sha256": "c93a53b964fc90790365b5a106cbfa2dba75fad769791729ae620e5c08e8a5f6",
+          "csv_bytes": 19674640,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-13",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-13.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-13.zip.CHECKSUM",
+          "zip_sha256_official": "293a2edf87230709d266574511c7ddc453728a7157429cce617e11a12bbbba32",
+          "zip_sha256_downloaded": "293a2edf87230709d266574511c7ddc453728a7157429cce617e11a12bbbba32",
+          "zip_bytes": 6390912,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-13.csv",
+          "csv_sha256": "850861e4595bb821d16d6cc74d9f410b2fb783155b96b3f8b58d1e7245e957cf",
+          "csv_bytes": 34058194,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-14",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-14.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-14.zip.CHECKSUM",
+          "zip_sha256_official": "2deabfa8cf285f72b7e7b4fc2a36e1eaa0413fd8da982ea0b94bd7a8bd947529",
+          "zip_sha256_downloaded": "2deabfa8cf285f72b7e7b4fc2a36e1eaa0413fd8da982ea0b94bd7a8bd947529",
+          "zip_bytes": 16469590,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-14.csv",
+          "csv_sha256": "b9dd9a8e23fec60548301b1759ff74f5467dc69c08ab27b652e2910c4c416788",
+          "csv_bytes": 90135785,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-15",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-15.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-15.zip.CHECKSUM",
+          "zip_sha256_official": "4c0a707148a13d50e39364b5339840adcaaefb351a9fa24d7bf77166aae366ad",
+          "zip_sha256_downloaded": "4c0a707148a13d50e39364b5339840adcaaefb351a9fa24d7bf77166aae366ad",
+          "zip_bytes": 22809274,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-15.csv",
+          "csv_sha256": "66e7a8655a1fd305506e9261c3a98c009f6e9c5def89d29a8814f6e1545cb39b",
+          "csv_bytes": 126248505,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-16",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-16.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-16.zip.CHECKSUM",
+          "zip_sha256_official": "7913ca54ac75492ba4e812d0ff02ac74f1d44b8fbdcd557efb314504ddbac25c",
+          "zip_sha256_downloaded": "7913ca54ac75492ba4e812d0ff02ac74f1d44b8fbdcd557efb314504ddbac25c",
+          "zip_bytes": 19195902,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-16.csv",
+          "csv_sha256": "9ee85566a23016365182196002b3e604f1add4e0049d0d80dc7a3336df03a50c",
+          "csv_bytes": 106867699,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-17",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-17.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-17.zip.CHECKSUM",
+          "zip_sha256_official": "7cca04b5490d013d1d028ee72c50d3baee5746ed6e379a452f888bdd3fbf1c29",
+          "zip_sha256_downloaded": "7cca04b5490d013d1d028ee72c50d3baee5746ed6e379a452f888bdd3fbf1c29",
+          "zip_bytes": 12175164,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-17.csv",
+          "csv_sha256": "f36d32c55781022c3c18976a105310752f3a15766f95e303edd762d10a411663",
+          "csv_bytes": 66323932,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-18",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-18.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-18.zip.CHECKSUM",
+          "zip_sha256_official": "d760ae7728a8964c94f2e0d7f30e97949ffc4330fc52744f44d59015ba17ef6d",
+          "zip_sha256_downloaded": "d760ae7728a8964c94f2e0d7f30e97949ffc4330fc52744f44d59015ba17ef6d",
+          "zip_bytes": 20036767,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-18.csv",
+          "csv_sha256": "06a3d1f2ee18d5280828c9c2c8206557653a1414ca2be4406489cea735d40779",
+          "csv_bytes": 109742257,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-19",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-19.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-19.zip.CHECKSUM",
+          "zip_sha256_official": "8cd7826e31b222c6254ca2ae6d5d901374328848a657aa4032c0af3506455405",
+          "zip_sha256_downloaded": "8cd7826e31b222c6254ca2ae6d5d901374328848a657aa4032c0af3506455405",
+          "zip_bytes": 8327272,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-19.csv",
+          "csv_sha256": "f9b89c30bb566f9e5531ef96e07fdd264fca6e3c50274e8864299bf8ce2d5ef1",
+          "csv_bytes": 44539574,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-20",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-20.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-20.zip.CHECKSUM",
+          "zip_sha256_official": "ccd0f7487712a653cba2ee54b970016817e06a12f1d05b675f0093df914b1be8",
+          "zip_sha256_downloaded": "ccd0f7487712a653cba2ee54b970016817e06a12f1d05b675f0093df914b1be8",
+          "zip_bytes": 10102227,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-20.csv",
+          "csv_sha256": "843e4fa9bfac362047f3887efb6dbd07d78db0e5956226874e1b9c11a168a9a9",
+          "csv_bytes": 54597768,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-21",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-21.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-21.zip.CHECKSUM",
+          "zip_sha256_official": "4ec6dc278b293522f4f7278781d8a1534ac295b1a3e424a0e8fd4f685b1821e8",
+          "zip_sha256_downloaded": "4ec6dc278b293522f4f7278781d8a1534ac295b1a3e424a0e8fd4f685b1821e8",
+          "zip_bytes": 30072099,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-21.csv",
+          "csv_sha256": "7538fb5a0a80cdeb60fc7ccfa8a1e10ca9b1794b72bdca21043214568aab751a",
+          "csv_bytes": 165759813,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-22",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-22.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-22.zip.CHECKSUM",
+          "zip_sha256_official": "d024d1955d2385eec53e0b8cec22192132d902ad8046dc21e17f68f06ec3a6a0",
+          "zip_sha256_downloaded": "d024d1955d2385eec53e0b8cec22192132d902ad8046dc21e17f68f06ec3a6a0",
+          "zip_bytes": 19397933,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-22.csv",
+          "csv_sha256": "51d7c98325d9d39497ebf3808cfb464617526ddbdb01e853e64b1ac18a03f562",
+          "csv_bytes": 106752905,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-23",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-23.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-23.zip.CHECKSUM",
+          "zip_sha256_official": "e2c477321014d911fabed20678c83beed4d0dd7d9fdf0f065a919a4bbf10478b",
+          "zip_sha256_downloaded": "e2c477321014d911fabed20678c83beed4d0dd7d9fdf0f065a919a4bbf10478b",
+          "zip_bytes": 19020340,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-23.csv",
+          "csv_sha256": "e6bb65e3f2612f7dea12b7fcefce4e05c08e3181d9d6ae2ab590a2102f4dd053",
+          "csv_bytes": 104494290,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-24",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-24.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-24.zip.CHECKSUM",
+          "zip_sha256_official": "a9b5204a513c5b45d2027b260644d1a1a0f04ed17f7c6f7903f9730658d0f455",
+          "zip_sha256_downloaded": "a9b5204a513c5b45d2027b260644d1a1a0f04ed17f7c6f7903f9730658d0f455",
+          "zip_bytes": 18577325,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-24.csv",
+          "csv_sha256": "ccdb4642bd5c8dd5b797f412e2f4da2757e1f9d846400bad11fd2f38bbb23c85",
+          "csv_bytes": 103073675,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-25",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-25.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-25.zip.CHECKSUM",
+          "zip_sha256_official": "99a53a0e4c5857bfa41f3478a6259e8e03e8803cf592aec91a9ccfe7e2f8202e",
+          "zip_sha256_downloaded": "99a53a0e4c5857bfa41f3478a6259e8e03e8803cf592aec91a9ccfe7e2f8202e",
+          "zip_bytes": 15115272,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-25.csv",
+          "csv_sha256": "ebc4121f7fb4c1b38b5e5688ee3f4afe609e0ccb70430411353d4f3a93445654",
+          "csv_bytes": 83259984,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-26",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-26.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-26.zip.CHECKSUM",
+          "zip_sha256_official": "466c12daf3ff16d91127bc224c84e646da42449ce4e7ecbc2e600fd0ffebb288",
+          "zip_sha256_downloaded": "466c12daf3ff16d91127bc224c84e646da42449ce4e7ecbc2e600fd0ffebb288",
+          "zip_bytes": 4341894,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-26.csv",
+          "csv_sha256": "e43e55999cba4b8e0170415854156bf7577f6f8ace7d2a0723e1ea2f2332d876",
+          "csv_bytes": 23005087,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-27",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-27.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-27.zip.CHECKSUM",
+          "zip_sha256_official": "2f2939e503a098abea9acf0a6e646b0d47e6d857f557445a52078650bb84b262",
+          "zip_sha256_downloaded": "2f2939e503a098abea9acf0a6e646b0d47e6d857f557445a52078650bb84b262",
+          "zip_bytes": 7322190,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-27.csv",
+          "csv_sha256": "207b47dc0f40986a0eb9fe5a849fc2494b984f7b090b6a1ad3043e285ab7ac5c",
+          "csv_bytes": 39431022,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-28",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-28.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-28.zip.CHECKSUM",
+          "zip_sha256_official": "a3347353cb624b639680cc9dfecd050155dc269f4ae5a059f443df07231394a8",
+          "zip_sha256_downloaded": "a3347353cb624b639680cc9dfecd050155dc269f4ae5a059f443df07231394a8",
+          "zip_bytes": 18699559,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-28.csv",
+          "csv_sha256": "fdc3249fdaf3e3871048f238d76dbfd78f0b1a136e76c3ca299e0467282de205",
+          "csv_bytes": 103251389,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-29",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-29.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-29.zip.CHECKSUM",
+          "zip_sha256_official": "b60f61778aed7194f2316af845229a68ebf9f370868525e6ba772d3b4fabaa86",
+          "zip_sha256_downloaded": "b60f61778aed7194f2316af845229a68ebf9f370868525e6ba772d3b4fabaa86",
+          "zip_bytes": 13760733,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-29.csv",
+          "csv_sha256": "8f45c24e47dfa015523cfb96f26e92ddfd763f4c78826bc7ef11f32beefb48bc",
+          "csv_bytes": 75295592,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "date": "2026-09-30",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-30.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/BTCUSDT/BTCUSDT-aggTrades-2026-09-30.zip.CHECKSUM",
+          "zip_sha256_official": "62cd39b1b90be376c56c7e24759a8ee3e2ea5d818d098a762cfa7e4fe0c56e1c",
+          "zip_sha256_downloaded": "62cd39b1b90be376c56c7e24759a8ee3e2ea5d818d098a762cfa7e4fe0c56e1c",
+          "zip_bytes": 17322502,
+          "csv_name": "BTCUSDT-aggTrades-2026-09-30.csv",
+          "csv_sha256": "022b05d97b0dc68a59e4001dedba714749d24d9df7bff6fce819c587103a8d25",
+          "csv_bytes": 95279908,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true,
+            "csv_matches_frozen_hash": true
+          }
+        }
+      ],
+      "klines_1m_and_markPriceKlines_1m": [
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-25.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-25.zip.CHECKSUM",
+          "zip_sha256_official": "1651da32387a1342bdba15b28504dc4d55caee905a58fec04f52c280b1d69f7f",
+          "zip_sha256_downloaded": "1651da32387a1342bdba15b28504dc4d55caee905a58fec04f52c280b1d69f7f",
+          "csv_sha256": "bf1d2a96dea682eba51187d7fb65f502f8af05cdc65c7a45d089776103d692d1",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-26.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-26.zip.CHECKSUM",
+          "zip_sha256_official": "4bbf0b1e71326f243a9388cd6365166694415cdb0b123443a293414f95e69bfd",
+          "zip_sha256_downloaded": "4bbf0b1e71326f243a9388cd6365166694415cdb0b123443a293414f95e69bfd",
+          "csv_sha256": "fd7ded88478895e525f3008f264f854cca5c5ae9c748c6a4f9b1877a7eba3c8c",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-27.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-27.zip.CHECKSUM",
+          "zip_sha256_official": "da7378a03b1d16a50cd90c04f4fa441383f0b6b5857a1c8a8462f89d59a780cf",
+          "zip_sha256_downloaded": "da7378a03b1d16a50cd90c04f4fa441383f0b6b5857a1c8a8462f89d59a780cf",
+          "csv_sha256": "cd851b1684779f7ee33b29d82a757fa9ce42950e35b779a85e3839d003f92104",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-28.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-28.zip.CHECKSUM",
+          "zip_sha256_official": "94bacc6e6f58d7700eaa309cf2bbeea15ec6e742e39c132f69f9d8bc8627f56c",
+          "zip_sha256_downloaded": "94bacc6e6f58d7700eaa309cf2bbeea15ec6e742e39c132f69f9d8bc8627f56c",
+          "csv_sha256": "921852995df2e52849bbe2e8b436da9d371164bd602c6196b720d80405741a59",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-29.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-29.zip.CHECKSUM",
+          "zip_sha256_official": "41e554b2a312bfadb74e4865c5cbef8dd401586c7d973c623d0915869eb81ebc",
+          "zip_sha256_downloaded": "41e554b2a312bfadb74e4865c5cbef8dd401586c7d973c623d0915869eb81ebc",
+          "csv_sha256": "47245e5c1727516f21b8dbd335ed66b8a46e3135803cbc6e145182d42ff95d93",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-30.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-30.zip.CHECKSUM",
+          "zip_sha256_official": "787a8f874aa060ae8fbc9760abbd1990446ca211a6bb2ac6957b6cc45a8ac45d",
+          "zip_sha256_downloaded": "787a8f874aa060ae8fbc9760abbd1990446ca211a6bb2ac6957b6cc45a8ac45d",
+          "csv_sha256": "3768c62c023901fd7e4dddf801e0142af2d7dfe6b23a6e062cfe17b925125d1d",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-31.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/1m/BTCUSDT-1m-2026-08-31.zip.CHECKSUM",
+          "zip_sha256_official": "3ad23c849a0cccaf3282d8f26bc576a2d0fb5d0f707a4d5f7439553e5a173188",
+          "zip_sha256_downloaded": "3ad23c849a0cccaf3282d8f26bc576a2d0fb5d0f707a4d5f7439553e5a173188",
+          "csv_sha256": "bd757102fc98a2194e7ba3307b76ab8505269a1694dda1f3cef6a4504b99c3e6",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "monthly",
+          "zip_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-09.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1m/BTCUSDT-1m-2026-09.zip.CHECKSUM",
+          "zip_sha256_official": "e1a821b5bf6b48d57da01c3e390b8a467a698155def5c18c2c63c0eb044a3247",
+          "zip_sha256_downloaded": "e1a821b5bf6b48d57da01c3e390b8a467a698155def5c18c2c63c0eb044a3247",
+          "csv_sha256": "6b482fc0d05691cda897515d6cdb81d878b8fd3d40c3d46a2e2a88e5fc99284a",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-25.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-25.zip.CHECKSUM",
+          "zip_sha256_official": "8582bbacb63e6ffe5bcea786ba5a9efc0191a2a9d9086a4b23786da159f72dd0",
+          "zip_sha256_downloaded": "8582bbacb63e6ffe5bcea786ba5a9efc0191a2a9d9086a4b23786da159f72dd0",
+          "csv_sha256": "31b5dc108763b9a301de92e339fc46185094e5e4cffd1a087865d34570302554",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-26.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-26.zip.CHECKSUM",
+          "zip_sha256_official": "ec7ebfec58b7bc0389ad41f335e7c84cff8fd8d8ab6e118823926ec62eb651fe",
+          "zip_sha256_downloaded": "ec7ebfec58b7bc0389ad41f335e7c84cff8fd8d8ab6e118823926ec62eb651fe",
+          "csv_sha256": "7b1732c441bbcbf154f83cd2901819068872bbb1d9d377ef5b76822e1ac83053",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-27.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-27.zip.CHECKSUM",
+          "zip_sha256_official": "1d103729ae1cc835786f97cb33f73dcd3098b8272c343cbe8c36d95d48ba5e0e",
+          "zip_sha256_downloaded": "1d103729ae1cc835786f97cb33f73dcd3098b8272c343cbe8c36d95d48ba5e0e",
+          "csv_sha256": "c906adcbd9b6fb7b882dd5759903751fd5d8401a5ebe9dec0af62410febbf158",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-28.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-28.zip.CHECKSUM",
+          "zip_sha256_official": "92e75c2bdca17e9bf7f147b4e354481a85e94700ad8ae37c3255b62eda4db6e1",
+          "zip_sha256_downloaded": "92e75c2bdca17e9bf7f147b4e354481a85e94700ad8ae37c3255b62eda4db6e1",
+          "csv_sha256": "8fc367f0f810984c5bd73d3cb2480662c398e242e3acd7e515ecbcfd9499113e",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-29.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-29.zip.CHECKSUM",
+          "zip_sha256_official": "2146dff9db1e1ddc3af33f00696f735d0076174602e659377532db817860f4ac",
+          "zip_sha256_downloaded": "2146dff9db1e1ddc3af33f00696f735d0076174602e659377532db817860f4ac",
+          "csv_sha256": "4852ee901f987953857a409e3800b3cd61f3d88e16faa6b00ea6a01137c622d2",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-30.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-30.zip.CHECKSUM",
+          "zip_sha256_official": "556f85889c279e8747baa2a5fc18e6997d19329a709ad05b58eb1144dd129b05",
+          "zip_sha256_downloaded": "556f85889c279e8747baa2a5fc18e6997d19329a709ad05b58eb1144dd129b05",
+          "csv_sha256": "7f9011bfb83c956df7ab73e77c439bb70c901d79ab1d4c1fbd97c9c5864ad030",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-31.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-08-31.zip.CHECKSUM",
+          "zip_sha256_official": "af2c0fc3b2d0ff7b3e9a6a2aa3414c9b6504fc778c17487a291ddcdebfcc4736",
+          "zip_sha256_downloaded": "af2c0fc3b2d0ff7b3e9a6a2aa3414c9b6504fc778c17487a291ddcdebfcc4736",
+          "csv_sha256": "eaa57c6c6158288b71c5385031ad6dbe66994fe85410ea3a6c892eaabdab27f2",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "monthly",
+          "zip_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-09.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1m/BTCUSDT-1m-2026-09.zip.CHECKSUM",
+          "zip_sha256_official": "68dfd75f32b99bd8019e914395d2a7d60d5c1a74a700fde9991bf19b0c39322e",
+          "zip_sha256_downloaded": "68dfd75f32b99bd8019e914395d2a7d60d5c1a74a700fde9991bf19b0c39322e",
+          "csv_sha256": "aa1679f2a68e267f3f243ac2cc11c35bd9891ac0c24bf5416a62f593a47a5ea8",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        }
+      ],
+      "funding": {
+        "source": "Binance USD-M Futures REST API",
+        "request": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1787616000000&endTime=1790812799999&limit=500",
+        "pagination": "forward via maximum fundingTime + 1ms",
+        "rows": 111,
+        "first_funding_time_utc": "2026-08-25T00:00:00.001000+00:00",
+        "last_funding_time_utc": "2026-09-30T16:00:00.002000+00:00",
+        "normalized_json_sha256": "b5c1e3feb36c03965d177d0ece7796e12a6b4e3b20d1d62fdee88d59e1048658",
+        "checks": {
+          "json_matches_frozen_hash": true
+        },
+        "note": "Funding rows were retrieved from the API on 2026-10-05 and normalized to JSON; the JSON is not published. Re-query the API to compare rows."
+      }
+    },
+    "ETHUSDT": {
+      "aggTrades_daily": [
+        {
+          "date": "2026-08-25",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-25.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-25.zip.CHECKSUM",
+          "zip_sha256_official": "96435c18929fe5937d7412039dc11b67b8966eb8b6863e7bab86716e946d8fd9",
+          "zip_sha256_downloaded": "96435c18929fe5937d7412039dc11b67b8966eb8b6863e7bab86716e946d8fd9",
+          "zip_bytes": 23493257,
+          "csv_name": "ETHUSDT-aggTrades-2026-08-25.csv",
+          "csv_sha256": "a7ff67bb1a82816a97b6673a02634890be7d29ae0d5e84146a8a1205be3b16f1",
+          "csv_bytes": 117089481,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-08-26",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-26.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-26.zip.CHECKSUM",
+          "zip_sha256_official": "c1fa61c6596fba14e35b3bec48d1c570aef8468fa9addc1aae821996eff4af4f",
+          "zip_sha256_downloaded": "c1fa61c6596fba14e35b3bec48d1c570aef8468fa9addc1aae821996eff4af4f",
+          "zip_bytes": 16883603,
+          "csv_name": "ETHUSDT-aggTrades-2026-08-26.csv",
+          "csv_sha256": "bef85bde880e2720e39c0443e6ae9b64c83460b0e356b87b19829330c6507d9f",
+          "csv_bytes": 83376882,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-08-27",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-27.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-27.zip.CHECKSUM",
+          "zip_sha256_official": "b0929f3449c5283781769b1aea1c9d8fe527f18663cdf7f55f81f4e6797a0908",
+          "zip_sha256_downloaded": "b0929f3449c5283781769b1aea1c9d8fe527f18663cdf7f55f81f4e6797a0908",
+          "zip_bytes": 19840211,
+          "csv_name": "ETHUSDT-aggTrades-2026-08-27.csv",
+          "csv_sha256": "74d6407e0d17e5702e956e4134178b46f1f9fde9691d20ed4648b6a0e52f6d6e",
+          "csv_bytes": 97487544,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-08-28",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-28.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-28.zip.CHECKSUM",
+          "zip_sha256_official": "b2b0b09e052710048a4e591e90b428059b5818bdbe1b2b64bca1034614e792d5",
+          "zip_sha256_downloaded": "b2b0b09e052710048a4e591e90b428059b5818bdbe1b2b64bca1034614e792d5",
+          "zip_bytes": 19828667,
+          "csv_name": "ETHUSDT-aggTrades-2026-08-28.csv",
+          "csv_sha256": "8fae097d23bd30b70216ae48ca788ac2204aab5f27e02404b80da60a17ee1f44",
+          "csv_bytes": 97594000,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-08-29",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-29.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-29.zip.CHECKSUM",
+          "zip_sha256_official": "13489d351a929d269a0a2a454036fa2a81c7b192b9f6dedb48f3849bb6aa52cd",
+          "zip_sha256_downloaded": "13489d351a929d269a0a2a454036fa2a81c7b192b9f6dedb48f3849bb6aa52cd",
+          "zip_bytes": 4774139,
+          "csv_name": "ETHUSDT-aggTrades-2026-08-29.csv",
+          "csv_sha256": "f8aa98b5998e27d7b361c52e6022d851b340958437a5a87aa02911aa97956278",
+          "csv_bytes": 22541686,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-08-30",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-30.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-30.zip.CHECKSUM",
+          "zip_sha256_official": "af22c29a30443cc370d91e8216790b277bb7c840d3280224d53f07695c7c6541",
+          "zip_sha256_downloaded": "af22c29a30443cc370d91e8216790b277bb7c840d3280224d53f07695c7c6541",
+          "zip_bytes": 14179879,
+          "csv_name": "ETHUSDT-aggTrades-2026-08-30.csv",
+          "csv_sha256": "bf6d2e48ccca20fc3a2a8038cf6089b2814395d41641050c50d620942da479d3",
+          "csv_bytes": 69880140,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-08-31",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-31.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-08-31.zip.CHECKSUM",
+          "zip_sha256_official": "beaca061feadd74ca15bb34f662d1b078f40f67a153c5038cdbf0bca2b19613b",
+          "zip_sha256_downloaded": "beaca061feadd74ca15bb34f662d1b078f40f67a153c5038cdbf0bca2b19613b",
+          "zip_bytes": 16825459,
+          "csv_name": "ETHUSDT-aggTrades-2026-08-31.csv",
+          "csv_sha256": "fec0d0f5de63c7b8f034d016b8bf52519f8ab26b15ae04bde23ba571794de2ae",
+          "csv_bytes": 82816660,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-01",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-01.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-01.zip.CHECKSUM",
+          "zip_sha256_official": "3c3440d01bf6dac778c803393cc8c592ab2e4be568c2fb7b6f1aab09d741c1aa",
+          "zip_sha256_downloaded": "3c3440d01bf6dac778c803393cc8c592ab2e4be568c2fb7b6f1aab09d741c1aa",
+          "zip_bytes": 15222094,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-01.csv",
+          "csv_sha256": "80d2709609688076229ea21b4d540a8d034db70ceef85cc76e5ee4af6deda701",
+          "csv_bytes": 74156829,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-02",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-02.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-02.zip.CHECKSUM",
+          "zip_sha256_official": "7cce0d1a0a08136227d3241dbfb3bb23c80762623fa5126d001a0a9e8941cd57",
+          "zip_sha256_downloaded": "7cce0d1a0a08136227d3241dbfb3bb23c80762623fa5126d001a0a9e8941cd57",
+          "zip_bytes": 16006889,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-02.csv",
+          "csv_sha256": "2d74344f71e13b72ab1dfc80083e9809d6aeae6f5294d627610631b7d9316c7d",
+          "csv_bytes": 77732453,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-03",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-03.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-03.zip.CHECKSUM",
+          "zip_sha256_official": "fab174b3ab5f9cb77b310386420c147bb157513a03e2d29b1f814c8cff87d9a8",
+          "zip_sha256_downloaded": "fab174b3ab5f9cb77b310386420c147bb157513a03e2d29b1f814c8cff87d9a8",
+          "zip_bytes": 18782623,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-03.csv",
+          "csv_sha256": "53c00b2aa98f8726fbb7db4917d9727bc606962acacce1d949ee68bf4699fe9a",
+          "csv_bytes": 91745879,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-04",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-04.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-04.zip.CHECKSUM",
+          "zip_sha256_official": "aba54ea01b4f0f313b4a612b2e3ed0163899883c6802dfc3d82e0911da470bea",
+          "zip_sha256_downloaded": "aba54ea01b4f0f313b4a612b2e3ed0163899883c6802dfc3d82e0911da470bea",
+          "zip_bytes": 17714421,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-04.csv",
+          "csv_sha256": "4bb4e524640bf907dbf1dca9955d90cbaea337ae3903a12179e9232724057e4a",
+          "csv_bytes": 87244831,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-05",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-05.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-05.zip.CHECKSUM",
+          "zip_sha256_official": "c85bb406ebf1ea2c0bd66b83969624edaf2fa24b6fedf163baa365c54e6853ab",
+          "zip_sha256_downloaded": "c85bb406ebf1ea2c0bd66b83969624edaf2fa24b6fedf163baa365c54e6853ab",
+          "zip_bytes": 5194010,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-05.csv",
+          "csv_sha256": "e3219cac3b063019e8869a11240fde7469d18a6601f19b7d293b376b01b9e6ce",
+          "csv_bytes": 24652301,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-06",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-06.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-06.zip.CHECKSUM",
+          "zip_sha256_official": "476893edf50fbcce0f198c54942ae70b1c9b093987e62fbc3f3dc50f31edf0a2",
+          "zip_sha256_downloaded": "476893edf50fbcce0f198c54942ae70b1c9b093987e62fbc3f3dc50f31edf0a2",
+          "zip_bytes": 10094346,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-06.csv",
+          "csv_sha256": "e86d6934d76eba921d66a99bf2676e371d15d2a376fa34b688cbe39c92e57770",
+          "csv_bytes": 48710385,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-07",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-07.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-07.zip.CHECKSUM",
+          "zip_sha256_official": "9b9f3aef64d3fbc72e0df15a15cb9630f39862c2d936cc3ef5ffc0bb11312b0c",
+          "zip_sha256_downloaded": "9b9f3aef64d3fbc72e0df15a15cb9630f39862c2d936cc3ef5ffc0bb11312b0c",
+          "zip_bytes": 11347173,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-07.csv",
+          "csv_sha256": "28f6640ceba6908e1cfc4cdeb0e1fdd7d6296eacaba0d1e6f31e84bc6af4911d",
+          "csv_bytes": 54900311,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-08",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-08.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-08.zip.CHECKSUM",
+          "zip_sha256_official": "173909c1f5b8e2db64c36b9206410355df5d1d529fdf07d4dfd41ad8c4e9876e",
+          "zip_sha256_downloaded": "173909c1f5b8e2db64c36b9206410355df5d1d529fdf07d4dfd41ad8c4e9876e",
+          "zip_bytes": 13341140,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-08.csv",
+          "csv_sha256": "4b2aa7f66bea048dd9e0bbbbdebc3380cb4f34fc6a225cb77644cd3777240e9e",
+          "csv_bytes": 64581112,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-09",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-09.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-09.zip.CHECKSUM",
+          "zip_sha256_official": "fbb1cde8ee2d3a4a9a5f278f9e2072d52ff8a8e8b80b83f8231e4c38d8ee59f9",
+          "zip_sha256_downloaded": "fbb1cde8ee2d3a4a9a5f278f9e2072d52ff8a8e8b80b83f8231e4c38d8ee59f9",
+          "zip_bytes": 14834292,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-09.csv",
+          "csv_sha256": "09d511db35d086e8c9301e888d5c4f26a281cc3bbf8a135e27c33a85deea581f",
+          "csv_bytes": 72158708,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-10.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-10.zip.CHECKSUM",
+          "zip_sha256_official": "dae9570843d8356136281a2034164284de6d2e60047f0708ba172e0c9b96188f",
+          "zip_sha256_downloaded": "dae9570843d8356136281a2034164284de6d2e60047f0708ba172e0c9b96188f",
+          "zip_bytes": 14613566,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-10.csv",
+          "csv_sha256": "29d29468f03e7fbc02e3a8e3222d975d2620a262f97bdf41c3e88d023a8ac16a",
+          "csv_bytes": 70812343,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-11",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-11.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-11.zip.CHECKSUM",
+          "zip_sha256_official": "b05dadb333e0d4a1d07a48a7efbff312b4b878fc7b6fc7c811ac4f9a232371f9",
+          "zip_sha256_downloaded": "b05dadb333e0d4a1d07a48a7efbff312b4b878fc7b6fc7c811ac4f9a232371f9",
+          "zip_bytes": 29646322,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-11.csv",
+          "csv_sha256": "359d535703a040de54eca39d43393862731b855be05850a23c8d9a3f9b6c57bb",
+          "csv_bytes": 148439134,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-12",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-12.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-12.zip.CHECKSUM",
+          "zip_sha256_official": "888ecb9fbd7ccadf04798eaa48835be7f692bac3c0724f4f8d73dcea6f265b11",
+          "zip_sha256_downloaded": "888ecb9fbd7ccadf04798eaa48835be7f692bac3c0724f4f8d73dcea6f265b11",
+          "zip_bytes": 5959027,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-12.csv",
+          "csv_sha256": "78ed0779a36446e5dd634f79cf63d2fac15e66e32ffcd2ee59ea66d3a2c4e44f",
+          "csv_bytes": 28261198,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-13",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-13.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-13.zip.CHECKSUM",
+          "zip_sha256_official": "f3d378ba270747bb378200202dcf4859e52a7cc1a67f6192e56945e21ef4f29c",
+          "zip_sha256_downloaded": "f3d378ba270747bb378200202dcf4859e52a7cc1a67f6192e56945e21ef4f29c",
+          "zip_bytes": 9118873,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-13.csv",
+          "csv_sha256": "01f77dcbfc2761c55e74df89ff3b78b37663dd88ca378129e08e37f67e3825ef",
+          "csv_bytes": 43810767,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-14",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-14.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-14.zip.CHECKSUM",
+          "zip_sha256_official": "be5e8672996818bb016fba82f7da5bc8df3831701d5f95937abc7be3aa1394fa",
+          "zip_sha256_downloaded": "be5e8672996818bb016fba82f7da5bc8df3831701d5f95937abc7be3aa1394fa",
+          "zip_bytes": 19303321,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-14.csv",
+          "csv_sha256": "74cd00a6621f31852947e2333a1f0217d71bd452f250a1297d9a73f9ff1e22cf",
+          "csv_bytes": 94562560,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-15",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-15.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-15.zip.CHECKSUM",
+          "zip_sha256_official": "ce42caddb5eb7f1633dbdcf76a1340f895ca4c35ea3acc5f0568a437faf219fb",
+          "zip_sha256_downloaded": "ce42caddb5eb7f1633dbdcf76a1340f895ca4c35ea3acc5f0568a437faf219fb",
+          "zip_bytes": 25001836,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-15.csv",
+          "csv_sha256": "d84c03d333efebb332448e8ec5ad6389406e5405e48c97027ead4c09d50ff9f0",
+          "csv_bytes": 123939022,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-16",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-16.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-16.zip.CHECKSUM",
+          "zip_sha256_official": "021e81abf6d605da4b03aadc6adeed93ca822a0c5bf8b99c585baec6ea8ee495",
+          "zip_sha256_downloaded": "021e81abf6d605da4b03aadc6adeed93ca822a0c5bf8b99c585baec6ea8ee495",
+          "zip_bytes": 22891070,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-16.csv",
+          "csv_sha256": "36c64e1c7e9a185222d8ff6b23ffcbe3697f6aab5c189edfe592d50465e00b09",
+          "csv_bytes": 114804403,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-17",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-17.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-17.zip.CHECKSUM",
+          "zip_sha256_official": "12345888790095a1bf33d4a84f14f310828dd5fdf1dbabba7d015e3abf538dde",
+          "zip_sha256_downloaded": "12345888790095a1bf33d4a84f14f310828dd5fdf1dbabba7d015e3abf538dde",
+          "zip_bytes": 15044323,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-17.csv",
+          "csv_sha256": "f08ce7ad5bd7ad8a3533f12250a2c34cbc2ce4c42003970aae52a23a9441b12e",
+          "csv_bytes": 73159889,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-18",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-18.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-18.zip.CHECKSUM",
+          "zip_sha256_official": "57e9efbe5cd824c1be163dc71a921b0675a0b131b08af3963d5dc0d4b7a18778",
+          "zip_sha256_downloaded": "57e9efbe5cd824c1be163dc71a921b0675a0b131b08af3963d5dc0d4b7a18778",
+          "zip_bytes": 25080729,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-18.csv",
+          "csv_sha256": "34b7e540e99fe266a8cd4306098040c2d2a48a2b8086efd8200434380ac79527",
+          "csv_bytes": 123586662,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-19",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-19.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-19.zip.CHECKSUM",
+          "zip_sha256_official": "6b775b85c71fc1792872a2065288e9a09e37f03518c98c59f48afac025535326",
+          "zip_sha256_downloaded": "6b775b85c71fc1792872a2065288e9a09e37f03518c98c59f48afac025535326",
+          "zip_bytes": 11541702,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-19.csv",
+          "csv_sha256": "6c0f3f4ebd0e62028d433f0db26fe9943035475ce9139976da0478a0dedd65ab",
+          "csv_bytes": 55957002,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-20",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-20.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-20.zip.CHECKSUM",
+          "zip_sha256_official": "50a6f5ea9441954437d749393c2f4ce7b814b160d8270d84b97bd789208f956c",
+          "zip_sha256_downloaded": "50a6f5ea9441954437d749393c2f4ce7b814b160d8270d84b97bd789208f956c",
+          "zip_bytes": 14606849,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-20.csv",
+          "csv_sha256": "119728821f1d001d46d4448cb48e85ab02715b5aa4f053f343fcf9179a1fd8ac",
+          "csv_bytes": 71384259,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-21",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-21.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-21.zip.CHECKSUM",
+          "zip_sha256_official": "bc885dfc5b8528464a2152300101905ed8af689970dedf93ed27eb9c9ccfb64f",
+          "zip_sha256_downloaded": "bc885dfc5b8528464a2152300101905ed8af689970dedf93ed27eb9c9ccfb64f",
+          "zip_bytes": 33846455,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-21.csv",
+          "csv_sha256": "6365ce1bdfcbf5a47dba4bc4b1f12548d0ef8ec626e61d6b49783db513c8e76c",
+          "csv_bytes": 169787489,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-22",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-22.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-22.zip.CHECKSUM",
+          "zip_sha256_official": "2b30dc7ea48b7888c70ddfb048ff85f270834345009cafe66e1bf4e2e85f2008",
+          "zip_sha256_downloaded": "2b30dc7ea48b7888c70ddfb048ff85f270834345009cafe66e1bf4e2e85f2008",
+          "zip_bytes": 19021321,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-22.csv",
+          "csv_sha256": "5f963a6fc34932bcecca0c87f5831230c5ca28d189e0698a3ef5524928898cda",
+          "csv_bytes": 94667348,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-23",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-23.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-23.zip.CHECKSUM",
+          "zip_sha256_official": "e8e87627b9d270b93be33321eeb96e28fdc7c4d72e5365b96bbf979abcce36ef",
+          "zip_sha256_downloaded": "e8e87627b9d270b93be33321eeb96e28fdc7c4d72e5365b96bbf979abcce36ef",
+          "zip_bytes": 19427296,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-23.csv",
+          "csv_sha256": "c89673a54b8c1187c4a0007c5fbf1ba4b378d32d7b92a1e2033b9ded063c821b",
+          "csv_bytes": 96440924,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-24",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-24.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-24.zip.CHECKSUM",
+          "zip_sha256_official": "fd9ed5751eee9052f35ae861af5ffb4c52490f4ef284a13e32355363072545e5",
+          "zip_sha256_downloaded": "fd9ed5751eee9052f35ae861af5ffb4c52490f4ef284a13e32355363072545e5",
+          "zip_bytes": 17296305,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-24.csv",
+          "csv_sha256": "1df9877efb07cab23e6dd2d2404bdad89e8d2cb2eb14c224003492f2c0711c6c",
+          "csv_bytes": 85619586,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-25",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-25.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-25.zip.CHECKSUM",
+          "zip_sha256_official": "a9d817d38751e4e128fabed5366a0df48fe5b3bd9755282ead73f71b1c1dc102",
+          "zip_sha256_downloaded": "a9d817d38751e4e128fabed5366a0df48fe5b3bd9755282ead73f71b1c1dc102",
+          "zip_bytes": 15440317,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-25.csv",
+          "csv_sha256": "05f240b5362d16374bfd055b693bbfe6eabbda87f8b077a046c04a59a79fc32d",
+          "csv_bytes": 76752968,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-26",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-26.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-26.zip.CHECKSUM",
+          "zip_sha256_official": "224fcd902b8a4d9b8f2602c47dc2113b09f84828ae266a5e290cf64b4d2686c1",
+          "zip_sha256_downloaded": "224fcd902b8a4d9b8f2602c47dc2113b09f84828ae266a5e290cf64b4d2686c1",
+          "zip_bytes": 4607087,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-26.csv",
+          "csv_sha256": "bbb4ed247750ccee829be2ce52feac19224ca1e6e49f91d034eb2d0971717c50",
+          "csv_bytes": 22007141,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-27",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-27.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-27.zip.CHECKSUM",
+          "zip_sha256_official": "5fb7a0a6562666dd17a3c6e6609c853992c41a5b569233734598d25301b46ea7",
+          "zip_sha256_downloaded": "5fb7a0a6562666dd17a3c6e6609c853992c41a5b569233734598d25301b46ea7",
+          "zip_bytes": 7399244,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-27.csv",
+          "csv_sha256": "8eb2d13df061cc2019bf3ccce89cc1d70c0958eb983712a0d37f33d49e7b4fdd",
+          "csv_bytes": 35688536,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-28",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-28.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-28.zip.CHECKSUM",
+          "zip_sha256_official": "dad11a45f1ae519f07a21c0b7a2ae6ec2a24e69e925c09aa4ee5b68984bfbf2c",
+          "zip_sha256_downloaded": "dad11a45f1ae519f07a21c0b7a2ae6ec2a24e69e925c09aa4ee5b68984bfbf2c",
+          "zip_bytes": 19227496,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-28.csv",
+          "csv_sha256": "17ba24ab7acd3713e304f3e5dba730ebd0fd3263032151e828ad1ca47a8c8dd1",
+          "csv_bytes": 95798516,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-29",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-29.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-29.zip.CHECKSUM",
+          "zip_sha256_official": "dd56929afed5429e7e6d874355381c8f561dd59ab6735ceecac2b42c6ee15460",
+          "zip_sha256_downloaded": "dd56929afed5429e7e6d874355381c8f561dd59ab6735ceecac2b42c6ee15460",
+          "zip_bytes": 17001386,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-29.csv",
+          "csv_sha256": "0b3f7ad057d5fb612ecf25237839ab32efae409c4b9743318d74fd30ee7b6122",
+          "csv_bytes": 84226647,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        },
+        {
+          "date": "2026-09-30",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-30.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/aggTrades/ETHUSDT/ETHUSDT-aggTrades-2026-09-30.zip.CHECKSUM",
+          "zip_sha256_official": "297ebbaa2f0a8288f6dad9ac678f040f867d52bbeb80c058a5f2e040943cf51c",
+          "zip_sha256_downloaded": "297ebbaa2f0a8288f6dad9ac678f040f867d52bbeb80c058a5f2e040943cf51c",
+          "zip_bytes": 14959086,
+          "csv_name": "ETHUSDT-aggTrades-2026-09-30.csv",
+          "csv_sha256": "b6177b0f54c9bc5dea3bfda1f687e45a8d40315c92d63278e8414ae9755f88c0",
+          "csv_bytes": 73535003,
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_local_input_csv": true
+          }
+        }
+      ],
+      "klines_1m_and_markPriceKlines_1m": [
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-25.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-25.zip.CHECKSUM",
+          "zip_sha256_official": "a2830f8fd327b53e8ca46e9c354c76aea6293ef37e7837b1e9c593c5dfd31f6b",
+          "zip_sha256_downloaded": "a2830f8fd327b53e8ca46e9c354c76aea6293ef37e7837b1e9c593c5dfd31f6b",
+          "csv_sha256": "d24cd69c72b1620a1cd1d1b438128fbc4b181fd5d02fb6bf67a4df6f43f50406",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-26.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-26.zip.CHECKSUM",
+          "zip_sha256_official": "1e760864968661b769f716c474a16d01e1e9e419720b7e4298c2653d68bfee3a",
+          "zip_sha256_downloaded": "1e760864968661b769f716c474a16d01e1e9e419720b7e4298c2653d68bfee3a",
+          "csv_sha256": "79863fe218f34cf808498b58c3e2e5fb098a16164e7d2daf0c6ec09a348671ca",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-27.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-27.zip.CHECKSUM",
+          "zip_sha256_official": "8fafa1b1da89cf2c8cec70baa55db19e933b21cb600b82f902b5116525028077",
+          "zip_sha256_downloaded": "8fafa1b1da89cf2c8cec70baa55db19e933b21cb600b82f902b5116525028077",
+          "csv_sha256": "b3ccbdcc849b1392de4e76a3e17626676edc5e3d6ba76391f9289d887488b207",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-28.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-28.zip.CHECKSUM",
+          "zip_sha256_official": "13a9d6459f19038a991ef9b59a1ba6277aaa88413ddb5d7e0da42fefa32a9c51",
+          "zip_sha256_downloaded": "13a9d6459f19038a991ef9b59a1ba6277aaa88413ddb5d7e0da42fefa32a9c51",
+          "csv_sha256": "03552ae77e6d042b35b2b194c3b74ffe43b8de097cc537b5bafd85b717c05b65",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-29.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-29.zip.CHECKSUM",
+          "zip_sha256_official": "6d64864dff240b52550814cb981d14325fb716d0705d4ca6f02116b321f1f91b",
+          "zip_sha256_downloaded": "6d64864dff240b52550814cb981d14325fb716d0705d4ca6f02116b321f1f91b",
+          "csv_sha256": "073728ca4cd2ab09f1cf83ca9258390c7710a171ef7f96cfe4e62a22f2590b5a",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-30.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-30.zip.CHECKSUM",
+          "zip_sha256_official": "e2a530a02a94d92ad96d5bcb7ca9e7961f10e9cc87bbff660c3f96de4508781f",
+          "zip_sha256_downloaded": "e2a530a02a94d92ad96d5bcb7ca9e7961f10e9cc87bbff660c3f96de4508781f",
+          "csv_sha256": "7dbef9cd9f62fbece4207123e6f447afbd25812a0d2fe2a76a362cc6886a78c2",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-31.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/1m/ETHUSDT-1m-2026-08-31.zip.CHECKSUM",
+          "zip_sha256_official": "0ece93f16fa7988a10c7b6178c6feac2160eeb82aafc6ea0b38a7aa7f82c6826",
+          "zip_sha256_downloaded": "0ece93f16fa7988a10c7b6178c6feac2160eeb82aafc6ea0b38a7aa7f82c6826",
+          "csv_sha256": "dde49b7ba599f35aafa1253fa10ee959b4e52a8e053782a5e90f53915caac219",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "klines",
+          "period": "monthly",
+          "zip_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-09.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1m/ETHUSDT-1m-2026-09.zip.CHECKSUM",
+          "zip_sha256_official": "c85c7ec631fa7fe3a90c30e4ef6a76aeac0b88be895872388d87a6a8fd3d2892",
+          "zip_sha256_downloaded": "c85c7ec631fa7fe3a90c30e4ef6a76aeac0b88be895872388d87a6a8fd3d2892",
+          "csv_sha256": "27cdf52632eaf8b59a8553c49a278b57e2686bd2c2923da62bb2165c85e8ca95",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-25.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-25.zip.CHECKSUM",
+          "zip_sha256_official": "b08478f51e6c2c643122c5991fda43e484e568e3b216660db9f517800b4cff3f",
+          "zip_sha256_downloaded": "b08478f51e6c2c643122c5991fda43e484e568e3b216660db9f517800b4cff3f",
+          "csv_sha256": "d1053d76c8d1930131569d3d177ba597a11b1c433e523094d6fb4d652e33e4bc",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-26.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-26.zip.CHECKSUM",
+          "zip_sha256_official": "6bfc0573c0d2a3d728c47bd3c14cdaec7857066e6e8b5b8a5f21b9597dea78c1",
+          "zip_sha256_downloaded": "6bfc0573c0d2a3d728c47bd3c14cdaec7857066e6e8b5b8a5f21b9597dea78c1",
+          "csv_sha256": "9ce153ec77a95e1585bc98e15859970256561698cc6fe1f90ba4190eda0b97b7",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-27.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-27.zip.CHECKSUM",
+          "zip_sha256_official": "ac6e8fa98aefd71c7957223bcebc2ee9b84f50d9e3e455d4f250ab18d6248781",
+          "zip_sha256_downloaded": "ac6e8fa98aefd71c7957223bcebc2ee9b84f50d9e3e455d4f250ab18d6248781",
+          "csv_sha256": "0800a21e0cc9ff5f52e7a5912deb53468fb16b61c52ad71e4b37aa380a61f8fc",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-28.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-28.zip.CHECKSUM",
+          "zip_sha256_official": "96dbff247a06099f5b38348731b370131525b762bb9c9b1d01dc5f80e35de0f2",
+          "zip_sha256_downloaded": "96dbff247a06099f5b38348731b370131525b762bb9c9b1d01dc5f80e35de0f2",
+          "csv_sha256": "7052f05fba268735eb296bd635005bd2b182de850884dab7558dfc0aba433148",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-29.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-29.zip.CHECKSUM",
+          "zip_sha256_official": "ba0613355d8ae1a47367d99a4c39543b5f5cd8aacb70480e5670b38d076b359a",
+          "zip_sha256_downloaded": "ba0613355d8ae1a47367d99a4c39543b5f5cd8aacb70480e5670b38d076b359a",
+          "csv_sha256": "f90e84d451a08a2414c8adf9fb55dbccb75d8e9e17ee92e785f182c9a4e63b76",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-30.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-30.zip.CHECKSUM",
+          "zip_sha256_official": "a6a9fd01905751a62ced600dcfb4de4bb9d5b47c7a7e297bb85cd8cc0e65a1f4",
+          "zip_sha256_downloaded": "a6a9fd01905751a62ced600dcfb4de4bb9d5b47c7a7e297bb85cd8cc0e65a1f4",
+          "csv_sha256": "a10d7c2b502c23d0a9b67f81bab8be3f6be79110e9ca9d9f2d8554edb26935f0",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "daily",
+          "zip_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-31.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-08-31.zip.CHECKSUM",
+          "zip_sha256_official": "06d621e98bb09e770622233c9bae325b59315141e439dc6ec1d1863b90b3fa42",
+          "zip_sha256_downloaded": "06d621e98bb09e770622233c9bae325b59315141e439dc6ec1d1863b90b3fa42",
+          "csv_sha256": "27a779593d07fafa2062a2952831dabd69233cd19bf3d6f6e8f2a0118a7c1a38",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        },
+        {
+          "kind": "markPriceKlines",
+          "period": "monthly",
+          "zip_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-09.zip",
+          "checksum_url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1m/ETHUSDT-1m-2026-09.zip.CHECKSUM",
+          "zip_sha256_official": "dcca59f8b352059563ade58ae52369bc02e9934857cb3bd790813c561d2dfaff",
+          "zip_sha256_downloaded": "dcca59f8b352059563ade58ae52369bc02e9934857cb3bd790813c561d2dfaff",
+          "csv_sha256": "60df5a43fa9eae8eced8fa709cf7036d055783e2d4aa206543dce6ad05ce774b",
+          "checks": {
+            "zip_matches_official_checksum": true,
+            "csv_matches_frozen_hash": true
+          }
+        }
+      ],
+      "funding": {
+        "source": "Binance USD-M Futures REST API",
+        "request": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1787616000000&endTime=1790812799999&limit=500",
+        "pagination": "forward via maximum fundingTime + 1ms",
+        "rows": 111,
+        "first_funding_time_utc": "2026-08-25T00:00:00.001000+00:00",
+        "last_funding_time_utc": "2026-09-30T16:00:00.002000+00:00",
+        "normalized_json_sha256": "8b3591098f20f8aa74eb234049c0b8bdb0244750d42fb4c7a61ebbc8b4c5c2d5",
+        "checks": {
+          "json_matches_frozen_hash": true
+        },
+        "note": "Funding rows were retrieved from the API on 2026-10-05 and normalized to JSON; the JSON is not published. Re-query the API to compare rows."
+      }
+    }
+  }
+}

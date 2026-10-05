@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "protocolId": "public-presets-oos-20260825-20260930",
+  "headlineMetric": "exit_net_return_pct",
+  "metricDefinition": "open position valued at the 2026-09-30 23:59 UTC mark-price close, net of exit costs",
+  "provenance": {
+    "repository": "blitz-backtest",
+    "repositoryVisibility": "private",
+    "runnerCommit": "7bf1c54363802e065b6ac6cd2de03cfb44776a82",
+    "freezeCommit": "79bc6ea7b7dccfba1893454824e4e8a4dd8ba448",
+    "freezeCommittedAt": "2026-10-05T11:58:18Z",
+    "resultsCommit": "4cd305dbadd7b6c103b202d05b90a52fed957dcd",
+    "enginesModified": false,
+    "engines": {
+      "btc": "_s14_u75_instrumented.py",
+      "eth": "eth_perp_v2.py",
+      "ethRunner": "run_btc_tick_eval.py"
+    }
+  },
+  "window": {
+    "start": "2026-08-25",
+    "end": "2026-09-30",
+    "days": 37,
+    "evaluatedAt": "2026-09-30T23:59:00Z"
+  },
+  "partialWindow": {
+    "start": "2026-09-02",
+    "end": "2026-09-30",
+    "days": 29
+  },
+  "valuation": {
+    "evaluatedAt": "2026-09-30T23:59:00Z",
+    "btc": {
+      "markCloseUsd": 83583.2930942
+    },
+    "eth": {
+      "markCloseUsd": 2684.73687597,
+      "priceTickUsd": 0.01,
+      "evaluationPriceUsd": 2684.73
+    }
+  },
+  "initialWalletUsd": 133333,
+  "rounds": {
+    "btc": 18,
+    "eth": 12
+  },
+  "hashPublicationDates": {
+    "btc": "2026-08-26",
+    "eth": "2026-09-08"
+  },
+  "hashes": {
+    "results": "767d62c507d63fb59062774016e8b68761a967c112ec75df46d52bfbcf4de2b9",
+    "freeze": "eb22322279c59c7d34457419c9b1cc520210bd7773ab8ea49183573ddd90dc3f",
+    "startedReceipt": "7026412ed6b1acd0f2afccf00ae24bcfc2d11a8e5df73bce7cdbf294099a7885",
+    "completedReceipt": "ba63db6641f862621abe5b41c53795ae1ee727f596a37db35d78db4168aebcbb"
+  },
+  "btc": {
+    "baseline": {
+      "exitNetReturnPct": 1.5311711678608564,
+      "closedCycleReturnPct": 2.23973999999989,
+      "openPositionEffectPp": -0.7085688321390338,
+      "maxDrawdownPct": -2.267,
+      "tpCycles": 141,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 10,
+      "fundingUsd": 0,
+      "slippageUsd": 0,
+      "feesUsd": 908.877727799999,
+      "terminal": {
+        "inPosition": true,
+        "step": 8,
+        "priceVsAveragePct": -2.3903084449272582,
+        "openedAt": "2026-09-23T04:23:21.279000+00:00",
+        "holdDays": 7.817110092592593
+      }
+    },
+    "funding": {
+      "exitNetReturnPct": 1.3694390630550446,
+      "maxDrawdownPct": -2.3166,
+      "tpCycles": 141,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 10,
+      "fundingUsd": 215.6422673008834,
+      "slippageUsd": 0,
+      "feesUsd": 908.877727799999,
+      "terminal": {
+        "inPosition": true,
+        "step": 8,
+        "priceVsAveragePct": -2.3903084449272582,
+        "openedAt": "2026-09-23T04:23:21.279000+00:00",
+        "holdDays": 7.817110092592593
+      }
+    },
+    "slip1": {
+      "exitNetReturnPct": 1.2689557639387727,
+      "maxDrawdownPct": -2.318,
+      "tpCycles": 141,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 10,
+      "fundingUsd": 215.6422673008834,
+      "slippageUsd": 130.22919442619985,
+      "feesUsd": 908.877727799999,
+      "terminal": {
+        "inPosition": true,
+        "step": 8,
+        "priceVsAveragePct": -2.3903084449272582,
+        "openedAt": "2026-09-23T04:23:21.279000+00:00",
+        "holdDays": 7.817110092592593
+      }
+    },
+    "slip2": {
+      "exitNetReturnPct": 1.168472464821213,
+      "maxDrawdownPct": -2.3193,
+      "tpCycles": 141,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 10,
+      "fundingUsd": 215.6422673008834,
+      "slippageUsd": 260.4583888523997,
+      "feesUsd": 908.877727799999,
+      "terminal": {
+        "inPosition": true,
+        "step": 8,
+        "priceVsAveragePct": -2.3903084449272582,
+        "openedAt": "2026-09-23T04:23:21.279000+00:00",
+        "holdDays": 7.817110092592593
+      }
+    }
+  },
+  "eth": {
+    "baseline": {
+      "exitNetReturnPct": 1.3660785888268023,
+      "maxDrawdownPct": -1.0507959712248605,
+      "tpCycles": 259,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 6,
+      "fundingUsd": 0,
+      "slippageUsd": 31.22379999999633,
+      "feesUsd": 397.80345396000007,
+      "terminal": {
+        "inPosition": true,
+        "step": 3,
+        "priceVsAveragePct": -1.1970773828333003,
+        "openedAt": "2026-09-30T12:56:03.355000+00:00",
+        "holdDays": 0.46106861111111114
+      }
+    },
+    "funding": {
+      "exitNetReturnPct": 1.3405237079867849,
+      "maxDrawdownPct": -1.048873685252949,
+      "tpCycles": 259,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 6,
+      "fundingUsd": 34.07308927040514,
+      "slippageUsd": 31.22379999999633,
+      "feesUsd": 397.80345396000007,
+      "terminal": {
+        "inPosition": true,
+        "step": 3,
+        "priceVsAveragePct": -1.1970773828333003,
+        "openedAt": "2026-09-30T12:56:03.355000+00:00",
+        "holdDays": 0.46106861111111114
+      }
+    },
+    "slip1": {
+      "exitNetReturnPct": 1.281648338198349,
+      "maxDrawdownPct": -1.0492052237033533,
+      "tpCycles": 259,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 6,
+      "fundingUsd": 34.07308927040514,
+      "slippageUsd": 109.14580000000738,
+      "feesUsd": 397.78786956000016,
+      "terminal": {
+        "inPosition": true,
+        "step": 3,
+        "priceVsAveragePct": -1.1970773828333003,
+        "openedAt": "2026-09-30T12:56:03.355000+00:00",
+        "holdDays": 0.46106861111111114
+      }
+    },
+    "slip2": {
+      "exitNetReturnPct": 1.2236749652297707,
+      "maxDrawdownPct": -1.049532413042098,
+      "tpCycles": 259,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 6,
+      "fundingUsd": 34.07308927040514,
+      "slippageUsd": 185.864900000003,
+      "feesUsd": 397.7725257400002,
+      "terminal": {
+        "inPosition": true,
+        "step": 3,
+        "priceVsAveragePct": -1.1970773828333003,
+        "openedAt": "2026-09-30T12:56:03.355000+00:00",
+        "holdDays": 0.46106861111111114
+      }
+    }
+  },
+  "ethPartial": {
+    "baseline": {
+      "exitNetReturnPct": 1.2257409937823427,
+      "maxDrawdownPct": -1.041413645680478,
+      "tpCycles": 239,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 6,
+      "fundingUsd": 0,
+      "slippageUsd": 28.821799999994173,
+      "feesUsd": 360.6820795599999,
+      "terminal": {
+        "inPosition": true,
+        "step": 3,
+        "priceVsAveragePct": -1.1762777211395403,
+        "openedAt": "2026-09-30T12:56:03.337000+00:00",
+        "holdDays": 0.46106881944444444
+      }
+    },
+    "funding": {
+      "exitNetReturnPct": 1.2087289641446342,
+      "maxDrawdownPct": -1.0394047551661179,
+      "tpCycles": 239,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 6,
+      "fundingUsd": 22.68264947683357,
+      "slippageUsd": 28.821799999994173,
+      "feesUsd": 360.6820795599999,
+      "terminal": {
+        "inPosition": true,
+        "step": 3,
+        "priceVsAveragePct": -1.1762777211395403,
+        "openedAt": "2026-09-30T12:56:03.337000+00:00",
+        "holdDays": 0.46106881944444444
+      }
+    },
+    "slip1": {
+      "exitNetReturnPct": 1.155620330198115,
+      "maxDrawdownPct": -1.0396419166453286,
+      "tpCycles": 239,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 6,
+      "fundingUsd": 22.68264947683357,
+      "slippageUsd": 99.05329999999832,
+      "feesUsd": 360.66803325999973,
+      "terminal": {
+        "inPosition": true,
+        "step": 3,
+        "priceVsAveragePct": -1.1762777211395403,
+        "openedAt": "2026-09-30T12:56:03.337000+00:00",
+        "holdDays": 0.46106881944444444
+      }
+    },
+    "slip2": {
+      "exitNetReturnPct": 1.1033553545956698,
+      "maxDrawdownPct": -1.0404329074928942,
+      "tpCycles": 239,
+      "liquidations": 0,
+      "maxStepIncludingOpen": 6,
+      "fundingUsd": 22.68264947683357,
+      "slippageUsd": 168.15969999999672,
+      "feesUsd": 360.65421197999956,
+      "terminal": {
+        "inPosition": true,
+        "step": 3,
+        "priceVsAveragePct": -1.1762777211395403,
+        "openedAt": "2026-09-30T12:56:03.337000+00:00",
+        "holdDays": 0.46106881944444444
+      }
+    }
+  },
+  "disclosureNote": "Disclosure wording follows the public wording standard; the frozen results file (sha256 767d62c507d63fb59062774016e8b68761a967c112ec75df46d52bfbcf4de2b9) keeps the original wording.",
+  "disclosures": {
+    "btcPriorUse": "None. No BTC strategy evaluation has opened data on or after 2026-08-25 (checked 2026-10-01).",
+    "ethPriorUse": "ETH 2026-08-25~2026-09-01 was already used by the rejected ETH V2 research (strict OOS receipt eth-perp-v2.6-20260903, hard_oos_end 2026-09-01). The public ETH preset's ladder was selected on 2026-09-07 and its wallet usage (U82) was fixed on 2026-09-08, both using data through 2026-08-24; market data from 2026-09-02 onward already existed at selection time but was not used. One exception: earlier historical ETH evaluations valued a position open at the end with the 2026-08-25 00:00 UTC mark-price minute and, on the indirect evidence of a reviewer we commissioned, also charged the funding payment settled at that minute in the funding scenarios (both corrected and disclosed on 2026-09-30); the runs used to choose the preset may also have read that minute. Both the full window 2026-08-25~2026-09-30 (not used in preset selection, apart from that minute) and the partial window 2026-09-02~2026-09-30 (not used in any prior research) are reported.",
+    "engineDifferences": "Each engine is internally consistent but the two differ: BTC legacy engine charges entry fees at TP and an exit fee of 0.05% of entry notional; the ETH engine charges entry fees on fill (plus 1bp entry slippage in every variant) and values the exit with a 0.02% limit fee on exit notional rounded down to the price tick. BTC max_step/MAE/utilization summary fields count closed cycles only; see terminal for the open position.",
+    "hashPublicationDatesNote": "hashPublicationDates are calendar dates in Korea Standard Time (UTC+9). The BTC report hash went live on 2026-08-25 18:24 UTC (2026-08-26 KST); the ETH report hash on 2026-09-08 10:36 UTC."
+  }
+}

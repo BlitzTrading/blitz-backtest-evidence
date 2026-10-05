@@ -2,28 +2,41 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22809596.svg)](https://doi.org/10.5281/zenodo.22809596)
 
-This repository holds the **result file** behind the backtest published at
-<https://www.blitz-trading.com/backtest>, so that the SHA-256 printed on that
-page can be checked by anyone.
+This repository holds the **result files** behind the backtest published at
+<https://www.blitz-trading.com/backtest> and the out-of-sample results that
+followed it, so that the SHA-256 values printed on the site can be checked by
+anyone.
 
 It is a results archive, not a trading system. The engine source is not here.
+
+## Contents
+
+| Path | What | First release |
+| --- | --- | --- |
+| `btc-futures-s14-40-n18-u75-20260824-public.report.json` | BTC historical backtest report, 2021-01-01 → 2026-08-24 | `snapshot-20260824` |
+| [`oos-20260825-20260930/`](oos-20260825-20260930/) | First out-of-sample window for the BTC and ETH public presets, 2026-08-25 → 2026-09-30 | `oos-20260825-20260930` |
 
 ## Archived copy (DOI)
 
 Every tagged release of this repository is archived by [Zenodo](https://zenodo.org)
-(CERN), which issues a DOI. The archived copy is independent of this
-repository and of blitz-trading.com — neither can alter it after the fact.
+(CERN), which issues a DOI. The archived copy is held by Zenodo, separately
+from this repository and from blitz-trading.com. Within 30 days of
+publication, the record owner can delete the record, or start a correction of
+its files that keeps the same DOI and must be published within 45 days of the
+original publication. After that, files change only in exceptional cases (such
+as exposed personal data) through Zenodo support. The SHA-256 values printed here, on the website and in each
+GitHub release let anyone check that an archived file has not changed.
 
 | | DOI |
 | --- | --- |
 | All versions (cite this) | <https://doi.org/10.5281/zenodo.22809596> |
-| This snapshot (`snapshot-20260824`) | <https://doi.org/10.5281/zenodo.22809597> |
+| Historical snapshot (`snapshot-20260824`) | <https://doi.org/10.5281/zenodo.22809597> |
 
 The JSON inside the Zenodo archive for `snapshot-20260824` hashes to the same
 SHA-256 as the file in this repository and the value printed on the website
 (verified 2026-09-17).
 
-## What is in this release
+## Historical snapshot (`snapshot-20260824`)
 
 | File | Bytes | SHA-256 |
 | --- | ---: | --- |
@@ -106,7 +119,9 @@ not separately published for this snapshot.
 - **Not live returns.** This is a historical simulation on recorded trades.
   Historical paths cannot reproduce future liquidity, fills, funding, or
   slippage. Trading involves risk of loss.
-- **Not out-of-sample.** The strict out-of-sample window has not been opened.
+- **Not out-of-sample.** This file covers the backtest period through
+  2026-08-24 only. Out-of-sample results are in
+  [`oos-20260825-20260930/`](oos-20260825-20260930/).
 - **Not the engine.** The code that produced this file is not published. What
   is published is the result, its provenance, and its hash.
 - **Not custom settings.** The result covers exactly the preset above.
