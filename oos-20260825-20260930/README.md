@@ -113,7 +113,7 @@ run.
 | 2026-10-05 11:58:18 | Execution plan frozen and committed (`79bc6ea7b7dccfba1893454824e4e8a4dd8ba448`) | private git repository |
 | 2026-10-05 11:58:29 | Run started | `started-receipt.json` |
 | 2026-10-05 12:02:24 | Run finished | `completed-receipt.json` |
-| this release | Summary, receipts and hashes archived | GitHub release and Zenodo DOI |
+| 2026-10-05 15:58 | Summary, receipts and hashes archived | GitHub release `oos-20260825-20260930`; Zenodo DOI [10.5281/zenodo.23166756](https://doi.org/10.5281/zenodo.23166756) |
 
 The freeze, run and results were recorded in a private git repository
 (runner `7bf1c54363802e065b6ac6cd2de03cfb44776a82`, freeze

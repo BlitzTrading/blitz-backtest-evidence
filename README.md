@@ -31,10 +31,13 @@ GitHub release let anyone check that an archived file has not changed.
 | --- | --- |
 | All versions (cite this) | <https://doi.org/10.5281/zenodo.22809596> |
 | Historical snapshot (`snapshot-20260824`) | <https://doi.org/10.5281/zenodo.22809597> |
+| Out-of-sample window 2026-08-25 → 2026-09-30 (`oos-20260825-20260930`) | <https://doi.org/10.5281/zenodo.23166756> |
 
 The JSON inside the Zenodo archive for `snapshot-20260824` hashes to the same
 SHA-256 as the file in this repository and the value printed on the website
-(verified 2026-09-17).
+(verified 2026-09-17). The four JSON files inside the archive for
+`oos-20260825-20260930` hash to the values in that folder's README and in the
+GitHub release (verified 2026-10-05).
 
 ## Historical snapshot (`snapshot-20260824`)
 
