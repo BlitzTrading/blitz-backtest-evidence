@@ -9,6 +9,13 @@ anyone.
 
 It is a results archive, not a trading system. The engine source is not here.
 
+> **See the bot behind these numbers.** [Blitz](https://www.blitz-trading.com/?utm_source=github&utm_medium=repo&utm_campaign=gh_backtest_evidence&utm_content=readme_top)
+> is a free DCA ladder bot that runs on your own exchange account. Read the full
+> [backtest page](https://www.blitz-trading.com/backtest?utm_source=github&utm_medium=repo&utm_campaign=gh_backtest_evidence&utm_content=readme_backtest),
+> follow a real Blitz bot day by day in [live-bot-record](https://github.com/BlitzTrading/live-bot-record),
+> or plan your own ladder with the [DCA Ladder Calculator](https://blitztrading.github.io/dca-ladder-calculator/).
+> Backtest results are not a guarantee of future returns.
+
 ## Contents
 
 | Path | What | First release |
